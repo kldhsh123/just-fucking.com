@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Just Fucking Read the Error Message</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="The answer is in the error message. You just didn't read it.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="just-fucking.com">
+  <meta property="og:title" content="Just Fucking Read the Error Message">
+  <meta property="og:description" content="The answer is in the error message. You just didn't read it.">
+  <meta property="og:url" content="https://just-fucking.com/read-the-error">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:title" content="Just Fucking Read the Error Message">
+  <meta name="twitter:description" content="The answer is in the error message. You just didn't read it.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://just-fucking.com/read-the-error">
+  <link rel="alternate" hreflang="en-US" href="https://just-fucking.com/read-the-error">
+  <link rel="alternate" hreflang="zh" href="https://just-fucking.com/read-the-error/zh">
+  <link rel="alternate" hreflang="x-default" href="https://just-fucking.com/read-the-error">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="top-bar">
+  <a href="/" class="github-link">&larr; Home</a>
+  <details class="lang-switch">
+    <summary>English</summary>
+    <div class="lang-menu">
+      <a href="/read-the-error" class="active">English</a>
+      <a href="/read-the-error/zh">中文</a>
+    </div>
+  </details>
+</nav>
+
+<h1>Just Fucking Read the Error Message</h1>
+
+<section>
+  <h2>The Opening Punch</h2>
+
+  <p>
+    You saw red text. Your brain shut off. You ran to Stack Overflow,
+    Discord, your coworker, ChatGPT, anyone but yourself.
+  </p>
+
+  <p>
+    And the entire time, the answer was sitting right there.
+    <strong>In the error message you didn't read.</strong>
+  </p>
+
+  <p>
+    The computer literally told you what went wrong. Line number included.
+    File path included. Sometimes even a fucking suggestion on how to fix it.
+    And you ignored all of it to ask "why isn't this working?"
+  </p>
+
+  <p>
+    That's not debugging. That's refusing to participate in your own profession.
+  </p>
+</section>
+
+<section>
+  <h2>The Lie You Tell Yourself</h2>
+
+  <p>
+    "Error messages are cryptic and unhelpful."
+  </p>
+
+  <p>
+    No. <strong>You</strong> are cryptic and unhelpful. The error message
+    is doing its job. It's telling you exactly what happened. You're the
+    one who glazed over after seeing "Error" and decided reading was too
+    much work.
+  </p>
+
+  <p>
+    Modern error messages are not the segfaults of the 1970s. They come
+    with:
+  </p>
+
+  <ul>
+    <li>The exact file and line number</li>
+    <li>The variable or function that failed</li>
+    <li>The expected type vs. the actual type</li>
+    <li>A stack trace showing how you got there</li>
+    <li>Sometimes a link to the documentation</li>
+    <li>Sometimes a literal "Did you mean X?" suggestion</li>
+  </ul>
+
+  <p>
+    And you still asked "what does this error mean?"
+  </p>
+
+  <p>
+    The error message is not the problem. Your attention span is.
+  </p>
+</section>
+
+<section>
+  <h2>The Reality Check</h2>
+
+  <p>
+    Here's what happens when you don't read the error:
+  </p>
+
+  <ul>
+    <li>
+      You waste your own time searching for answers that were already given to you
+    </li>
+    <li>
+      You waste someone else's time when they ask "what's the error?" and you
+      say "I don't know, something about null"
+    </li>
+    <li>
+      You look incompetent when the answer was <code>Cannot read property 'x' of undefined at line 47</code>
+      and you spent an hour looking at line 200
+    </li>
+    <li>
+      You develop a learned helplessness where every error feels impossible
+      because you never actually tried to understand one
+    </li>
+  </ul>
+
+  <p>
+    Senior developers aren't better at debugging because they're smarter.
+    They're better because they actually read the damn error message
+    before doing anything else.
+  </p>
+</section>
+
+<section>
+  <h2>The Example That Hurts</h2>
+
+  <p>
+    The error says:
+  </p>
+
+  <pre><code>TypeError: Cannot read properties of undefined (reading 'map')
+    at UserList (UserList.jsx:15:23)
+    at renderWithHooks (react-dom.development.js:14985:18)</code></pre>
+
+  <p>
+    What you did: Googled "React map undefined error" and spent 30 minutes
+    reading about optional chaining, default props, and state management
+    patterns.
+  </p>
+
+  <p>
+    What you should have done: Gone to <code>UserList.jsx</code>, line 15,
+    column 23, and looked at what you were calling <code>.map()</code> on.
+    Then traced back to where that variable came from. Total time: 2 minutes.
+  </p>
+
+  <p>
+    The error gave you the address. You chose to wander the neighborhood
+    asking strangers for directions instead.
+  </p>
+</section>
+
+<section>
+  <h2>The Future You're Creating</h2>
+
+  <p>
+    Every time you skip reading the error, you reinforce the habit. You
+    train yourself to panic instead of analyze. You become the developer
+    who can't function without hand-holding.
+  </p>
+
+  <p>
+    And when you're on-call at 3 AM and production is down, there won't
+    be a Stack Overflow thread for your specific combination of problems.
+    There won't be a coworker awake to ask. There will just be you and
+    the error message.
+  </p>
+
+  <p>
+    Will you read it then? Or will you freeze because you never learned how?
+  </p>
+</section>
+
+<section>
+  <h2>The Closing Hammer</h2>
+
+  <p>
+    Error messages exist to help you. They are the most honest feedback
+    you will ever receive. They don't care about your feelings. They
+    don't sugarcoat. They tell you exactly what went wrong.
+  </p>
+
+  <p>
+    All you have to do is read them.
+  </p>
+
+  <p>
+    So next time you see red text, stop. Read every word. Read the file
+    path. Read the line number. Read the stack trace. Google the specific
+    error text if you must, but only after you've actually read it.
+  </p>
+
+  <p>
+    <strong>Just fucking read the error message.</strong>
+  </p>
+</section>
+
+<footer>
+  <hr>
+  <p>
+    <small>
+      &copy; Just Fucking Read the Error Message. All rights reserved, you
+      error-ignoring panic machine.
+    </small>
+  </p>
+  <p>
+    <small>
+      Part of <a href="/">just-fucking.com</a> — strong opinions for weak excuses.
+    </small>
+  </p>
+  <p>
+    <a href="https://github.com/kldhsh123/just-fucking.com/">Got an opinion that hurts? Submit a PR.</a>
+  </p>
+</footer>
+
+</body>
+</html>

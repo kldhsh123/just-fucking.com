@@ -1,0 +1,68 @@
+name: New Fucking Opinion
+description: Got something that pisses you off? Tell us what needs to be fucking addressed.
+title: "[FUCKING] "
+labels: ["new-opinion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## You have an opinion that hurts? Good.
+        Fill this out and we'll help you fucking say it.
+
+  - type: input
+    id: title
+    attributes:
+      label: What do you want to fucking?
+      description: "Example: Write Tests, Use Version Control, Document Your API"
+      placeholder: "Just Fucking ___"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this piss you off?
+      description: What behavior are you attacking? What's the lie people tell themselves?
+      placeholder: |
+        People do X instead of Y because they're lazy/scared/stupid.
+        They tell themselves "it's fine because Z" but it's not fine.
+        Here's why this is bullshit...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: What language do you want this in?
+      description: We'll write it or help translate it.
+      options:
+        - English
+        - 中文 (Chinese)
+        - 日本語 (Japanese)
+        - 한국어 (Korean)
+        - Español (Spanish)
+        - Deutsch (German)
+        - Français (French)
+        - Português (Portuguese)
+        - Русский (Russian)
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Got a painful example?
+      description: A real scenario that shows why this behavior is garbage.
+      placeholder: |
+        Someone did X, and then Y happened, and everyone suffered because...
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: This attacks a behavior, not a person or group
+          required: true
+        - label: I understand this will be direct, rude, and unapologetic
+          required: true

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh" dir="ltr">
+<head>
+  <title>他妈的把报错发给开发</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="把报错发给开发。别自己藏着当宝贝。">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="just-fucking.com">
+  <meta property="og:title" content="他妈的把报错发给开发">
+  <meta property="og:description" content="把报错发给开发。别自己藏着当宝贝。">
+  <meta property="og:url" content="https://just-fucking.com/send-the-error-report/zh">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh_CN">
+
+  <meta name="twitter:title" content="他妈的把报错发给开发">
+  <meta name="twitter:description" content="把报错发给开发。别自己藏着当宝贝。">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://just-fucking.com/send-the-error-report/zh">
+  <link rel="alternate" hreflang="en-US" href="https://just-fucking.com/send-the-error-report">
+  <link rel="alternate" hreflang="zh" href="https://just-fucking.com/send-the-error-report/zh">
+  <link rel="alternate" hreflang="x-default" href="https://just-fucking.com/send-the-error-report">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="zh">
+
+<nav class="top-bar">
+  <a href="/zh" class="github-link">&larr; 首页</a>
+  <details class="lang-switch">
+    <summary>中文</summary>
+    <div class="lang-menu">
+      <a href="/send-the-error-report">English</a>
+      <a href="/send-the-error-report/zh" class="active">中文</a>
+    </div>
+  </details>
+</nav>
+
+<h1>他妈的把报错发给开发</h1>
+
+<section>
+  <h2>开场暴击</h2>
+
+  <p>
+    出问题了。你看到报错了。你他妈清清楚楚知道发生了什么。
+    然后你没把报错发给开发，而是说了句"不好使"，
+    等着他们用意念来猜。
+  </p>
+
+  <p>
+    <strong>bug 修不好就是因为你这种傻逼。</strong>
+  </p>
+
+  <p>
+    你屏幕上那个堆栈跟踪？那是他妈的黄金。你截了图然后自己藏着的那个报错信息？
+    那正是开发需要的东西。但你这个脑残决定玩寻宝游戏，而不是把你已经找到的
+    东西分享出来。
+  </p>
+
+  <p>
+    把报错藏着不会让你显得重要。只会让你成为他妈的障碍。
+  </p>
+</section>
+
+<section>
+  <h2>你骗自己的谎话</h2>
+
+  <p>
+    "他们是开发，应该自己能搞定。"
+  </p>
+
+  <p>
+    搞定<em>什么</em>？你什么都没给，傻逼。"坏了"不是 bug 报告。
+    是对着空气喊。开发不是他妈的通灵的。他们没法用心灵感应调试你的电脑。
+  </p>
+
+  <p>
+    "但我看不懂那些技术的东西。"
+  </p>
+
+  <p>
+    你不需要看懂。你只需要他妈的<strong>复制粘贴</strong>。
+    那一堆你无视掉的红字？截图。那个你忽略的控制台报错？复制。
+    那个你一点就关的弹窗？先他妈看一眼再关。
+  </p>
+
+  <p>
+    你的工作不是解读报错。你的工作是别他妈把它藏起来。
+  </p>
+</section>
+
+<section>
+  <h2>现实检查</h2>
+
+  <p>
+    你不发报错会发生什么：
+  </p>
+
+  <ul>
+    <li>
+      开发问："报什么错了？" 你说："不记得了，我关掉了。" 傻逼吗？
+    </li>
+    <li>
+      开发花2小时尝试复现一个你截图2秒就能说清楚的问题。
+    </li>
+    <li>
+      开发修了一个根本不是真正问题的东西，因为他们只能他妈的猜。
+    </li>
+    <li>
+      真正的 bug 还留在代码里。下一个人继续踩坑。循环往复。
+    </li>
+    <li>
+      所有人的时间都浪费了。包括你的，因为 bug 根本没修好，脑残。
+    </li>
+  </ul>
+
+  <p>
+    报错信息是通往宝藏的地图。你把它埋了，然后抱怨没人找到宝藏。傻逼行为。
+  </p>
+</section>
+
+<section>
+  <h2>扎心的例子</h2>
+
+  <p>
+    你发的消息：
+  </p>
+
+  <pre><code>"那个东西不好使了"</code></pre>
+
+  <p>
+    开发要问的：
+  </p>
+
+  <ul>
+    <li>哪个他妈的东西？</li>
+    <li>你在干什么？</li>
+    <li>你期望发生什么？</li>
+    <li>实际发生了什么？</li>
+    <li>有报错信息吗？</li>
+    <li>什么浏览器/设备？</li>
+    <li>能复现吗？</li>
+  </ul>
+
+  <p>
+    你他妈应该发的：
+  </p>
+
+  <pre><code>"导出PDF按钮报这个错：
+TypeError: Cannot read property 'save' of undefined
+at PDFExporter.js:47
+
+步骤：仪表盘 → 报告 → 点导出PDF
+浏览器：Chrome 120，macOS
+截图见附件"</code></pre>
+
+  <p>
+    就这样。这才是 bug 报告。一条消息。零来回。
+    开发可以直接开始修，而不是玩20个问题猜谜游戏。
+  </p>
+</section>
+
+<section>
+  <h2>你在创造的未来</h2>
+
+  <p>
+    每次你藏着报错，你都在投票给更慢的修复。你在告诉开发，
+    他们的时间不值你那他妈30秒的复制粘贴。
+  </p>
+
+  <p>
+    愿意分享报错的团队修问题贼快。那些只会说"坏了"啥都不给的傻逼团队？
+    他们淹没在工单和没人能复现的神秘 bug 里。
+  </p>
+
+  <p>
+    想要更好的软件？做个更好的 bug 报告者。这是你他妈能做的
+    付出最少、效果最大的事。
+  </p>
+</section>
+
+<section>
+  <h2>收尾重锤</h2>
+
+  <p>
+    当东西坏了：
+  </p>
+
+  <ul>
+    <li>截图报错。完整截。</li>
+    <li>复制报错文本。</li>
+    <li>写下出错时你在干什么。</li>
+    <li>发出去。立刻。给开发。</li>
+  </ul>
+
+  <p>
+    别他妈总结。别解读。别以为他们不需要。
+    别关掉报错弹窗假装啥都没发生。
+  </p>
+
+  <p>
+    报错信息不是你的私有财产。它是出问题的证据。交出来，傻逼。
+  </p>
+
+  <p>
+    <strong>操他妈的把报错发给开发。</strong>
+  </p>
+</section>
+
+<footer>
+  <hr>
+  <p>
+    <small>
+      &copy; 他妈的把报错发给开发。版权所有，藏着报错只会说"坏了"的你。
+    </small>
+  </p>
+  <p>
+    <small>
+      <a href="/zh">just-fucking.com</a> 出品 — 用强硬观点对付烂借口。
+    </small>
+  </p>
+  <p>
+    <a href="https://github.com/kldhsh123/just-fucking.com/">有让人不舒服的观点？提个 PR。</a>
+  </p>
+</footer>
+
+</body>
+</html>

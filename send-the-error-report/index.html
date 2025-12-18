@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Just Fucking Send the Error Report</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Send the error to the developer. Stop hoarding it like a secret.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="just-fucking.com">
+  <meta property="og:title" content="Just Fucking Send the Error Report">
+  <meta property="og:description" content="Send the error to the developer. Stop hoarding it like a secret.">
+  <meta property="og:url" content="https://just-fucking.com/send-the-error-report">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:title" content="Just Fucking Send the Error Report">
+  <meta name="twitter:description" content="Send the error to the developer. Stop hoarding it like a secret.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://just-fucking.com/send-the-error-report">
+  <link rel="alternate" hreflang="en-US" href="https://just-fucking.com/send-the-error-report">
+  <link rel="alternate" hreflang="zh" href="https://just-fucking.com/send-the-error-report/zh">
+  <link rel="alternate" hreflang="x-default" href="https://just-fucking.com/send-the-error-report">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="top-bar">
+  <a href="/" class="github-link">&larr; Home</a>
+  <details class="lang-switch">
+    <summary>English</summary>
+    <div class="lang-menu">
+      <a href="/send-the-error-report" class="active">English</a>
+      <a href="/send-the-error-report/zh">中文</a>
+    </div>
+  </details>
+</nav>
+
+<h1>Just Fucking Send the Error Report</h1>
+
+<section>
+  <h2>The Opening Punch</h2>
+
+  <p>
+    Something broke. You saw the error. You know exactly what happened.
+    And instead of sending it to the developer, you said "it doesn't work"
+    and waited for them to magically figure it out.
+  </p>
+
+  <p>
+    <strong>You are the reason bugs take forever to fix.</strong>
+  </p>
+
+  <p>
+    That stack trace on your screen? That's gold. That error message you
+    screenshot and then kept to yourself? That's the exact information
+    developers need. But you decided to play treasure hunt instead of
+    sharing what you already found.
+  </p>
+
+  <p>
+    Hoarding error messages doesn't make you important. It makes you an obstacle.
+  </p>
+</section>
+
+<section>
+  <h2>The Lie You Tell Yourself</h2>
+
+  <p>
+    "They're the developer, they should be able to figure it out."
+  </p>
+
+  <p>
+    Figure out <em>what</em>? You gave them nothing. "It's broken" is not
+    a bug report. It's a cry into the void. Developers aren't psychic.
+    They can't debug your machine through telepathy.
+  </p>
+
+  <p>
+    "But I don't understand the technical stuff."
+  </p>
+
+  <p>
+    You don't have to understand it. You just have to <strong>copy and paste it</strong>.
+    That wall of red text you dismissed? Screenshot it. That console error
+    you ignored? Copy it. That popup you clicked away? Read it first.
+  </p>
+
+  <p>
+    Your job isn't to interpret the error. Your job is to not hide it.
+  </p>
+</section>
+
+<section>
+  <h2>The Reality Check</h2>
+
+  <p>
+    Here's what happens when you don't send the error:
+  </p>
+
+  <ul>
+    <li>
+      Developer asks: "What error did you see?" You say: "I don't remember,
+      I closed it."
+    </li>
+    <li>
+      Developer spends 2 hours trying to reproduce an issue that your
+      screenshot would have explained in 2 seconds.
+    </li>
+    <li>
+      Developer fixes something that wasn't the actual problem because
+      they had to guess.
+    </li>
+    <li>
+      The real bug stays in the codebase. It bites someone else. The cycle
+      continues.
+    </li>
+    <li>
+      Everyone's time is wasted. Including yours, because the bug isn't
+      actually fixed.
+    </li>
+  </ul>
+
+  <p>
+    The error message is the map to the treasure. You're burying it and
+    then complaining that nobody found the treasure.
+  </p>
+</section>
+
+<section>
+  <h2>The Example That Hurts</h2>
+
+  <p>
+    The Slack message you sent:
+  </p>
+
+  <pre><code>"hey the thing isn't working"</code></pre>
+
+  <p>
+    What the developer has to ask:
+  </p>
+
+  <ul>
+    <li>What thing?</li>
+    <li>What were you doing?</li>
+    <li>What did you expect to happen?</li>
+    <li>What actually happened?</li>
+    <li>Was there an error message?</li>
+    <li>What browser/device?</li>
+    <li>Can you reproduce it?</li>
+  </ul>
+
+  <p>
+    What you should have sent:
+  </p>
+
+  <pre><code>"Export PDF button throws this error:
+TypeError: Cannot read property 'save' of undefined
+at PDFExporter.js:47
+
+Steps: Dashboard → Reports → Click Export PDF
+Browser: Chrome 120, macOS
+Screenshot attached"</code></pre>
+
+  <p>
+    That's it. That's a bug report. One message. Zero back-and-forth.
+    Developer can start fixing immediately instead of playing 20 questions.
+  </p>
+</section>
+
+<section>
+  <h2>The Future You're Creating</h2>
+
+  <p>
+    Every time you hide an error, you're voting for slower fixes. You're
+    telling developers that their time is worth less than your 30 seconds
+    of copy-pasting.
+  </p>
+
+  <p>
+    Teams that share errors fix things fast. Teams where people say
+    "it's broken" and nothing else? They drown in support tickets and
+    mysterious bugs that nobody can reproduce.
+  </p>
+
+  <p>
+    You want better software? Be a better bug reporter. It's the lowest
+    effort, highest impact thing you can do.
+  </p>
+</section>
+
+<section>
+  <h2>The Closing Hammer</h2>
+
+  <p>
+    When something breaks:
+  </p>
+
+  <ul>
+    <li>Screenshot the error. All of it.</li>
+    <li>Copy the error message text.</li>
+    <li>Write what you were doing when it happened.</li>
+    <li>Send it. Immediately. To the developer.</li>
+  </ul>
+
+  <p>
+    Don't summarize. Don't interpret. Don't assume they don't need it.
+    Don't close the error dialog and pretend it didn't happen.
+  </p>
+
+  <p>
+    The error message is not your private property. It's the evidence
+    that something is wrong. Hand it over.
+  </p>
+
+  <p>
+    <strong>Just fucking send the error report.</strong>
+  </p>
+</section>
+
+<footer>
+  <hr>
+  <p>
+    <small>
+      &copy; Just Fucking Send the Error Report. All rights reserved, you
+      error-hoarding "it's broken" messenger.
+    </small>
+  </p>
+  <p>
+    <small>
+      Part of <a href="/">just-fucking.com</a> — strong opinions for weak excuses.
+    </small>
+  </p>
+  <p>
+    <a href="https://github.com/kldhsh123/just-fucking.com/">Got an opinion that hurts? Submit a PR.</a>
+  </p>
+</footer>
+
+</body>
+</html>

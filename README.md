@@ -167,3 +167,5 @@ The opinions are free. The consequences of ignoring them are not.
 ---
 
 **Got an opinion that hurts? Submit a PR.**
+
+**Don't know how to PR? [Open an Issue](https://github.com/kldhsh123/just-fucking.com/issues/). Tell us what to fucking, and we'll fucking it for you.**

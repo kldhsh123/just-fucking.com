@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Just Fucking Stop Overengineering</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="You don't need that abstraction. You need to ship.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="just-fucking.com">
+  <meta property="og:title" content="Just Fucking Stop Overengineering">
+  <meta property="og:description" content="You don't need that abstraction. You need to ship.">
+  <meta property="og:url" content="https://just-fucking.com/stop-overengineering">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:title" content="Just Fucking Stop Overengineering">
+  <meta name="twitter:description" content="You don't need that abstraction. You need to ship.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://just-fucking.com/stop-overengineering">
+  <link rel="alternate" hreflang="en-US" href="https://just-fucking.com/stop-overengineering">
+  <link rel="alternate" hreflang="zh" href="https://just-fucking.com/stop-overengineering/zh">
+  <link rel="alternate" hreflang="x-default" href="https://just-fucking.com/stop-overengineering">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="top-bar">
+  <a href="/" class="github-link">&larr; Home</a>
+  <details class="lang-switch">
+    <summary>English</summary>
+    <div class="lang-menu">
+      <a href="/stop-overengineering" class="active">English</a>
+      <a href="/stop-overengineering/zh">中文</a>
+    </div>
+  </details>
+</nav>
+
+<h1>Just Fucking Stop Overengineering</h1>
+
+<section>
+  <h2>The Opening Punch</h2>
+
+  <p>
+    You were asked to add a button. You built a configurable component
+    factory with a plugin system, theme support, and an event bus.
+  </p>
+
+  <p>
+    <strong>Nobody asked for that.</strong>
+  </p>
+
+  <p>
+    The feature request was 20 lines of code. You wrote 2000 because
+    you couldn't resist the urge to "do it right." You didn't do it
+    right. You did it complicated. And now everyone who touches your
+    code pays the price for your architectural masturbation.
+  </p>
+
+  <p>
+    That's not engineering. That's ego with a keyboard.
+  </p>
+</section>
+
+<section>
+  <h2>The Lie You Tell Yourself</h2>
+
+  <p>
+    "But what if we need to extend it later?"
+  </p>
+
+  <p>
+    You don't know what you'll need later. Nobody does. You're not
+    predicting the future—you're <strong>cosplaying</strong> as someone
+    who can. And 90% of the time, that "future requirement" never comes.
+    It was a fantasy you used to justify overcomplicating the present.
+  </p>
+
+  <p>
+    YAGNI isn't a suggestion. It's a law of physics. You Aren't Gonna
+    Need It. And even if you do need it, you'll know better what "it"
+    looks like when you actually have the requirement—not when you're
+    guessing in a vacuum.
+  </p>
+
+  <p>
+    The code you write for imaginary requirements is worse than no code
+    at all. It's wrong code that now has to be maintained, understood,
+    and worked around.
+  </p>
+</section>
+
+<section>
+  <h2>The Reality Check</h2>
+
+  <p>
+    Here's what overengineering actually costs:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Time now:</strong> You spent 3 days building what should
+      have taken 3 hours
+    </li>
+    <li>
+      <strong>Time later:</strong> Everyone who touches this code has
+      to understand your architecture astronautics before they can make
+      a simple change
+    </li>
+    <li>
+      <strong>Bugs:</strong> More code means more bugs. Your abstraction
+      layer has bugs. Your plugin system has bugs. Your event bus has
+      race conditions.
+    </li>
+    <li>
+      <strong>Onboarding:</strong> New developers stare at your code
+      wondering why adding a tooltip requires understanding dependency
+      injection
+    </li>
+    <li>
+      <strong>Deletion:</strong> When requirements change (and they will),
+      nobody can delete your code because nobody understands what depends
+      on what
+    </li>
+  </ul>
+
+  <p>
+    You didn't save future time. You borrowed against it with
+    interest.
+  </p>
+</section>
+
+<section>
+  <h2>The Example That Hurts</h2>
+
+  <p>
+    The task: Display user names in a list.
+  </p>
+
+  <p>
+    What you built:
+  </p>
+
+  <ul>
+    <li>A generic <code>DataRenderer</code> base class</li>
+    <li>A <code>ListRenderer</code> that extends it</li>
+    <li>A <code>UserListRenderer</code> that extends that</li>
+    <li>A <code>RenderStrategy</code> interface for swappable rendering</li>
+    <li>A <code>UserNameRenderStrategy</code> implementation</li>
+    <li>A factory to create renderers</li>
+    <li>Configuration files for renderer options</li>
+    <li>Unit tests for all of the above</li>
+  </ul>
+
+  <p>
+    What you needed:
+  </p>
+
+  <pre><code>users.map(user => &lt;li&gt;{user.name}&lt;/li&gt;)</code></pre>
+
+  <p>
+    That's it. That was the whole requirement. One line.
+  </p>
+
+  <p>
+    Your eight abstractions don't make this better. They make it
+    unmaintainable. When someone needs to change how names display,
+    they now have to trace through five files instead of changing
+    one line.
+  </p>
+</section>
+
+<section>
+  <h2>The Future You're Creating</h2>
+
+  <p>
+    Overengineered codebases don't scale. They calcify. Every abstraction
+    becomes load-bearing. Every "flexible" system becomes a rigid prison
+    that nobody can modify without breaking something else.
+  </p>
+
+  <p>
+    The fastest, most maintainable codebases are boring. They're obvious.
+    They do the simple thing. When they need to do more, they add the
+    minimum necessary complexity—not a moment before.
+  </p>
+
+  <p>
+    You want to know what senior developers do? They delete code. They
+    simplify. They push back on unnecessary complexity. They've seen
+    enough "clever" architectures collapse under their own weight.
+  </p>
+
+  <p>
+    The best code is code you don't write.
+  </p>
+</section>
+
+<section>
+  <h2>The Closing Hammer</h2>
+
+  <p>
+    Before you add that abstraction, ask yourself:
+  </p>
+
+  <ul>
+    <li>Do I have three concrete examples that need this?</li>
+    <li>Could I solve this with a simple function instead?</li>
+    <li>Would a junior developer understand this in 5 minutes?</li>
+    <li>Am I solving a real problem or an imaginary one?</li>
+  </ul>
+
+  <p>
+    If you can't answer yes to the first and third questions, you're
+    overengineering. Stop it. Write the stupid simple version. Ship it.
+    Move on.
+  </p>
+
+  <p>
+    The users don't care about your architecture. They care about the
+    feature working. Your teammates don't admire your abstractions.
+    They curse them when they have to debug at 11 PM.
+  </p>
+
+  <p>
+    <strong>Just fucking stop overengineering.</strong>
+  </p>
+</section>
+
+<footer>
+  <hr>
+  <p>
+    <small>
+      &copy; Just Fucking Stop Overengineering. All rights reserved, you
+      architecture-astronaut abstraction-addict.
+    </small>
+  </p>
+  <p>
+    <small>
+      Part of <a href="/">just-fucking.com</a> — strong opinions for weak excuses.
+    </small>
+  </p>
+  <p>
+    <a href="https://github.com/kldhsh123/just-fucking.com/">Got an opinion that hurts? Submit a PR.</a>
+  </p>
+</footer>
+
+</body>
+</html>

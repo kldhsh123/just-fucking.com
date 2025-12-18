@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh" dir="ltr">
+<head>
+  <title>他妈的把报错看完</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="答案就在报错信息里。你只是没看。">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="just-fucking.com">
+  <meta property="og:title" content="他妈的把报错看完">
+  <meta property="og:description" content="答案就在报错信息里。你只是没看。">
+  <meta property="og:url" content="https://just-fucking.com/read-the-error/zh">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh_CN">
+
+  <meta name="twitter:title" content="他妈的把报错看完">
+  <meta name="twitter:description" content="答案就在报错信息里。你只是没看。">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://just-fucking.com/read-the-error/zh">
+  <link rel="alternate" hreflang="en-US" href="https://just-fucking.com/read-the-error">
+  <link rel="alternate" hreflang="zh" href="https://just-fucking.com/read-the-error/zh">
+  <link rel="alternate" hreflang="x-default" href="https://just-fucking.com/read-the-error">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="zh">
+
+<nav class="top-bar">
+  <a href="/zh" class="github-link">&larr; 首页</a>
+  <details class="lang-switch">
+    <summary>中文</summary>
+    <div class="lang-menu">
+      <a href="/read-the-error">English</a>
+      <a href="/read-the-error/zh" class="active">中文</a>
+    </div>
+  </details>
+</nav>
+
+<h1>他妈的把报错看完</h1>
+
+<section>
+  <h2>开场暴击</h2>
+
+  <p>
+    你看到了红色的字。你的脑子立刻他妈的宕机了。你冲向了 Stack Overflow、
+    技术群、同事、ChatGPT，反正就是不看屏幕上那行字。
+  </p>
+
+  <p>
+    而答案一直就在那里。
+    <strong>在你他妈没读的那条报错信息里。</strong>
+  </p>
+
+  <p>
+    计算机已经告诉你哪里出问题了。行号给你了。文件路径给你了。
+    有时候还他妈直接告诉你怎么修。而你这个脑残无视了这一切，跑去问
+    "为什么不行啊？"
+  </p>
+
+  <p>
+    这不叫调试。这叫他妈的拒绝参与你自己的工作。
+  </p>
+</section>
+
+<section>
+  <h2>你骗自己的谎话</h2>
+
+  <p>
+    "报错信息太难懂了，根本看不明白。"
+  </p>
+
+  <p>
+    放屁。<strong>你</strong>才难懂。报错信息在尽职尽责地告诉你
+    到底发生了什么。是你这个傻逼看到"Error"两个字就眼神涣散，觉得阅读
+    是个苦差事。
+  </p>
+
+  <p>
+    现代的报错信息早就不是70年代的 segfault 了。它们包含：
+  </p>
+
+  <ul>
+    <li>精确的文件名和行号</li>
+    <li>出错的变量或函数</li>
+    <li>期望的类型 vs 实际的类型</li>
+    <li>告诉你怎么走到这一步的调用栈</li>
+    <li>有时候还带文档链接</li>
+    <li>有时候直接问你"你是不是想用 X？"</li>
+  </ul>
+
+  <p>
+    然后你这个脑残还是问"这个报错是什么意思？"
+  </p>
+
+  <p>
+    报错信息没问题。你他妈的注意力有问题。
+  </p>
+</section>
+
+<section>
+  <h2>现实检查</h2>
+
+  <p>
+    不看报错会发生什么：
+  </p>
+
+  <ul>
+    <li>
+      你浪费自己的时间去找一个他妈已经摆在你面前的答案
+    </li>
+    <li>
+      你浪费别人的时间——他们问"报什么错"，你说"不知道，好像是 null 什么的"
+    </li>
+    <li>
+      当答案是 <code>Cannot read property 'x' of undefined at line 47</code>
+      而你花了一小时在第200行找问题时，你看起来像个傻逼
+    </li>
+    <li>
+      你养成了习得性无助，每个报错都觉得无解，因为你他妈从来没真正试着理解过一个
+    </li>
+  </ul>
+
+  <p>
+    资深开发者调试厉害不是因为他们更聪明。是因为他们不像你这种傻逼，
+    他们在做任何事之前，会先把那他妈的报错信息读完。
+  </p>
+</section>
+
+<section>
+  <h2>扎心的例子</h2>
+
+  <p>
+    报错信息：
+  </p>
+
+  <pre><code>TypeError: Cannot read properties of undefined (reading 'map')
+    at UserList (UserList.jsx:15:23)
+    at renderWithHooks (react-dom.development.js:14985:18)</code></pre>
+
+  <p>
+    你这个脑残的做法：去百度搜"React map undefined 报错"，花了30分钟研究
+    可选链、默认props、状态管理最佳实践。
+  </p>
+
+  <p>
+    你他妈应该做的：打开 <code>UserList.jsx</code>，定位到第15行第23列，
+    看看你对什么东西调用了 <code>.map()</code>。然后追溯这个变量
+    是从哪来的。总耗时：2分钟。
+  </p>
+
+  <p>
+    报错信息给了你门牌号。你这个傻逼选择在小区里到处问路人怎么走。
+  </p>
+</section>
+
+<section>
+  <h2>你在创造的未来</h2>
+
+  <p>
+    每次你跳过报错信息，你就在强化这个脑残习惯。你在训练自己遇到问题就慌，
+    而不是分析。你在变成那种离开别人就没法他妈干活的废物开发者。
+  </p>
+
+  <p>
+    等你凌晨3点值班、线上炸了的时候，不会有现成的 Stack Overflow 帖子
+    解答你那个特定的问题组合。不会有同事醒着让你问。只有你，和那条
+    报错信息。
+  </p>
+
+  <p>
+    到时候你会读吗？还是你会懵逼，因为你他妈从来没学会怎么读？
+  </p>
+</section>
+
+<section>
+  <h2>收尾重锤</h2>
+
+  <p>
+    报错信息的存在是为了帮你这个傻逼。它是你能收到的最诚实的反馈。它不在乎
+    你的感受。它不会粉饰太平。它就是告诉你出了什么问题。
+  </p>
+
+  <p>
+    你要做的只是他妈的读它。
+  </p>
+
+  <p>
+    所以下次你看到红色的字，停下来。每个字都读。读文件路径。读行号。
+    读调用栈。如果需要可以搜索具体的报错文本，但前提是你真的他妈读过了。
+  </p>
+
+  <p>
+    <strong>操他妈的把报错看完。</strong>
+  </p>
+</section>
+
+<footer>
+  <hr>
+  <p>
+    <small>
+      &copy; 他妈的把报错看完。版权所有，无视报错一看就慌的选手。
+    </small>
+  </p>
+  <p>
+    <small>
+      <a href="/zh">just-fucking.com</a> 出品 — 用强硬观点对付烂借口。
+    </small>
+  </p>
+  <p>
+    <a href="https://github.com/kldhsh123/just-fucking.com/">有让人不舒服的观点？提个 PR。</a>
+  </p>
+</footer>
+
+</body>
+</html>

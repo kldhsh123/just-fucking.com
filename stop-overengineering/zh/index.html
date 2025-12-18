@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh" dir="ltr">
+<head>
+  <title>别他妈过度设计</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="你不需要那个抽象层。你需要的是把东西交付出去。">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="just-fucking.com">
+  <meta property="og:title" content="别他妈过度设计">
+  <meta property="og:description" content="你不需要那个抽象层。你需要的是把东西交付出去。">
+  <meta property="og:url" content="https://just-fucking.com/stop-overengineering/zh">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh_CN">
+
+  <meta name="twitter:title" content="别他妈过度设计">
+  <meta name="twitter:description" content="你不需要那个抽象层。你需要的是把东西交付出去。">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://just-fucking.com/stop-overengineering/zh">
+  <link rel="alternate" hreflang="en-US" href="https://just-fucking.com/stop-overengineering">
+  <link rel="alternate" hreflang="zh" href="https://just-fucking.com/stop-overengineering/zh">
+  <link rel="alternate" hreflang="x-default" href="https://just-fucking.com/stop-overengineering">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="zh">
+
+<nav class="top-bar">
+  <a href="/zh" class="github-link">&larr; 首页</a>
+  <details class="lang-switch">
+    <summary>中文</summary>
+    <div class="lang-menu">
+      <a href="/stop-overengineering">English</a>
+      <a href="/stop-overengineering/zh" class="active">中文</a>
+    </div>
+  </details>
+</nav>
+
+<h1>别他妈过度设计</h1>
+
+<section>
+  <h2>开场暴击</h2>
+
+  <p>
+    让你加个按钮。你他妈搞了一个可配置的组件工厂，带插件系统、
+    主题支持、还有事件总线。
+  </p>
+
+  <p>
+    <strong>没人他妈要这些玩意。</strong>
+  </p>
+
+  <p>
+    这个功能需求20行代码就能搞定。你写了2000行，因为你这个傻逼忍不住
+    要"把它做对"。你没做对。你做复杂了。现在每个碰你代码的人
+    都要为你的架构自嗨买单。
+  </p>
+
+  <p>
+    这不是工程。这是脑残的自我满足配个键盘。
+  </p>
+</section>
+
+<section>
+  <h2>你骗自己的谎话</h2>
+
+  <p>
+    "万一以后要扩展呢？"
+  </p>
+
+  <p>
+    扩展你妈。你不知道以后要什么。没人知道。你不是在预测未来——你是在
+    <strong>扮演</strong>一个能预测未来的傻逼。而90%的情况下，
+    那个"未来需求"永远不会来。那是你用来给过度复杂化现在
+    找的狗屁借口。
+  </p>
+
+  <p>
+    YAGNI（你他妈不会需要它）不是建议。是物理定律。你不会需要它。
+    就算你真的需要，等你真有需求的时候，你会更清楚它长什么样——
+    而不是在真空里瞎几把猜的时候。
+  </p>
+
+  <p>
+    你为想象中的需求写的代码，比不写还他妈糟。那是错误的代码，
+    现在还得维护、理解、绕着走。
+  </p>
+</section>
+
+<section>
+  <h2>现实检查</h2>
+
+  <p>
+    过度设计到底要付出什么他妈的代价：
+  </p>
+
+  <ul>
+    <li>
+      <strong>现在浪费的时间：</strong>你花了3天做一个3小时能搞定的事，傻逼吗？
+    </li>
+    <li>
+      <strong>以后浪费的时间：</strong>每个碰这段代码的人都得先搞懂你的
+      脑残架构太空漫步，才能改一行简单的东西
+    </li>
+    <li>
+      <strong>Bug：</strong>代码越多 bug 越多。你的抽象层有 bug。你的
+      插件系统有 bug。你的事件总线有竞态条件。
+    </li>
+    <li>
+      <strong>新人上手：</strong>新来的开发盯着你的代码发呆，搞不懂
+      为什么他妈的加个 tooltip 需要理解依赖注入
+    </li>
+    <li>
+      <strong>删除：</strong>当需求变了（一定会变），没人能删你的代码，
+      因为没人他妈搞得清什么依赖什么
+    </li>
+  </ul>
+
+  <p>
+    你没有节省未来的时间。你在透支它，还要付利息，傻逼。
+  </p>
+</section>
+
+<section>
+  <h2>扎心的例子</h2>
+
+  <p>
+    任务：在列表里显示用户名。
+  </p>
+
+  <p>
+    你这个脑残搞了什么：
+  </p>
+
+  <ul>
+    <li>一个通用的 <code>DataRenderer</code> 基类</li>
+    <li>一个继承它的 <code>ListRenderer</code></li>
+    <li>一个继承那个的 <code>UserListRenderer</code></li>
+    <li>一个 <code>RenderStrategy</code> 接口用于可替换渲染</li>
+    <li>一个 <code>UserNameRenderStrategy</code> 实现</li>
+    <li>一个工厂来创建渲染器</li>
+    <li>渲染器选项的配置文件</li>
+    <li>以上所有东西的单元测试</li>
+  </ul>
+
+  <p>
+    你他妈实际需要的：
+  </p>
+
+  <pre><code>users.map(user => &lt;li&gt;{user.name}&lt;/li&gt;)</code></pre>
+
+  <p>
+    完了。整个需求就这样。一行。
+  </p>
+
+  <p>
+    你的八层抽象没有让它变好。让它他妈的没法维护了。当有人需要改名字的
+    显示方式时，他们现在得追踪五个文件，而不是改一行。
+  </p>
+</section>
+
+<section>
+  <h2>你在创造的未来</h2>
+
+  <p>
+    过度设计的代码库不会扩展。它们会他妈的石化。每个抽象都变成承重墙。
+    每个"灵活"的系统都变成一座没人能修改的刚性监狱，动一下就
+    塌别的地方。
+  </p>
+
+  <p>
+    最快、最好维护的代码库是无聊的。是显而易见的。是做最简单的事。
+    当它们需要做更多的时候，才加入最少的必要复杂度——一秒都不会
+    他妈的提前。
+  </p>
+
+  <p>
+    你想知道资深开发者干什么吗？他们删代码。他们简化。他们反对
+    不必要的复杂度。他们见过太多"聪明"的架构被自己的重量压垮。
+  </p>
+
+  <p>
+    最好的代码是你他妈不写的代码。
+  </p>
+</section>
+
+<section>
+  <h2>收尾重锤</h2>
+
+  <p>
+    在你加那个脑残抽象层之前，问自己：
+  </p>
+
+  <ul>
+    <li>我有三个具体的例子需要这个吗？</li>
+    <li>我能用一个简单的函数解决吗？</li>
+    <li>一个初级开发能在5分钟内看懂吗？</li>
+    <li>我在解决真实的问题还是想象出来的？</li>
+  </ul>
+
+  <p>
+    如果你不能对第一个和第三个问题回答"是"，你就在他妈的过度设计。
+    停下来。写那个傻瓜式的简单版本。交付。继续干下一个。
+  </p>
+
+  <p>
+    用户不在乎你的架构。他们在乎功能能不能用。你的队友不崇拜
+    你的抽象。他们晚上11点调试的时候在骂你这个傻逼。
+  </p>
+
+  <p>
+    <strong>操他妈的别过度设计。</strong>
+  </p>
+</section>
+
+<footer>
+  <hr>
+  <p>
+    <small>
+      &copy; 别他妈过度设计。版权所有，架构宇航员抽象成瘾者。
+    </small>
+  </p>
+  <p>
+    <small>
+      <a href="/zh">just-fucking.com</a> 出品 — 用强硬观点对付烂借口。
+    </small>
+  </p>
+  <p>
+    <a href="https://github.com/kldhsh123/just-fucking.com/">有让人不舒服的观点？提个 PR。</a>
+  </p>
+</footer>
+
+</body>
+</html>
