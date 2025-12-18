@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh" dir="ltr">
+<head>
+  <title>他妈的给我写注释</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="你的代码不会自己解释自己。从来不会。别再自欺欺人了，他妈的给我写注释。">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="他妈的给我写注释">
+  <meta property="og:title" content="他妈的给我写注释">
+  <meta property="og:description" content="你的代码不会自己解释自己。从来不会。别再自欺欺人了，他妈的给我写注释。">
+  <meta property="og:url" content="https://just-fucking.com/write-comments/zh">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+
+  <meta name="twitter:title" content="他妈的给我写注释">
+  <meta name="twitter:description" content="你的代码不会自己解释自己。从来不会。别再自欺欺人了，他妈的给我写注释。">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://just-fucking.com/write-comments/zh">
+  <link rel="alternate" hreflang="en-US" href="https://just-fucking.com/write-comments">
+  <link rel="alternate" hreflang="zh" href="https://just-fucking.com/write-comments/zh">
+  <link rel="alternate" hreflang="x-default" href="https://just-fucking.com/write-comments">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="zh">
+
+<nav class="top-bar">
+  <a href="/zh" class="github-link">← 首页</a>
+  <details class="lang-switch">
+    <summary>中文</summary>
+    <div class="lang-menu">
+      <a href="/write-comments">English</a>
+      <a href="/write-comments/zh" class="active">中文</a>
+    </div>
+  </details>
+</nav>
+
+<header>
+  <h1>他妈的给我写注释</h1>
+
+  <p>
+    "我的代码是自解释的。"
+  </p>
+
+  <p>
+    放你妈的狗屁。给我听好了。
+  </p>
+
+  <p>
+    我见过你的代码。所有人都见过你的代码。读起来就像一个中风患者写的勒索信。
+    你的变量名不叫"表意清晰"。你的函数签名不叫"意图明确"。你的抽象层不叫
+    "讲述故事"。那叫象形文字。古老的、神秘的、无法破译的象形文字——连你自己
+    六个月后都看不懂。但行，继续告诉自己代码是自解释的吧。继续一边往 main
+    推送一坨没注释的狗屎，一边给自己灌这碗迷魂汤。
+  </p>
+</header>
+
+<section>
+  <h2>"整洁代码"的幻觉</h2>
+
+  <p>
+    哦，你读过那本书。真棒啊，识字的傻逼。你学会了有意义的命名、小函数、
+    单一职责。你觉得自己开悟了。你觉得自己高人一等。你认定注释是"代码坏味道"，
+    然后像在做功德一样把每一行注释都删了个精光。
+  </p>
+
+  <p>
+    那本书没告诉你的是：起名字他妈的难得要死，而你并没有你想象的那么擅长。你把函数
+    命名为 <code>processData()</code>，然后心想"嗯，这很清楚"。清楚？对谁清楚？
+    处理什么数据？怎么处理？为什么处理？这个函数存在的宇宙意义是什么？你的方法
+    叫 <code>handleClick()</code>，然后写了 200 行。处理什么？点击？还是整个
+    应用状态、三个 API 调用、外加一堆你在生产环境才会发现的神秘副作用？
+  </p>
+
+  <p>
+    "但如果我需要注释，说明我的代码还不够整洁！" 放你妈的屁。这不是智慧，这是借口。
+    这是你懒得多打 15 个字，然后包装成工程哲学。整洁的代码告诉你"这是什么"。
+    注释告诉你"这是为什么"。而"为什么"才是唯一重要的东西——当你凌晨两点调试
+    bug，死活想不起来为什么你写了一个看起来违反逻辑和人伦的条件判断时。
+  </p>
+</section>
+
+<section>
+  <h2>你正在制造的考古灾难</h2>
+
+  <p>
+    你那没有注释的代码是这样老化的：
+  </p>
+
+  <p>
+    <strong>第 1 天：</strong>"这代码优雅且不言自明。"<br>
+    <strong>第 2 周：</strong>"我大概还记得这干嘛的。"<br>
+    <strong>第 3 个月：</strong>"这里应该是有原因的，我想。"<br>
+    <strong>第 6 个月：</strong>"这他妈的是哪个神经病写的玩意？"<br>
+    <strong>第 1 年：</strong>"别他妈动这个文件。没人知道它干嘛的。它能跑。我们不知道为什么。
+    如果它挂了，我们全他妈的得完蛋。"
+  </p>
+
+  <p>
+    那个文件？那个神圣的、不可触碰的、所有人都怕的文件？上面有人绝望地
+    留下 <code>// Here be dragons</code> 警告的那个？那是你的代码。那是
+    你当初引以为傲的杰作。那是你"自解释"的遗产，现在像他妈的一坨没人想认领
+    的屎一样在代码库里发臭。
+  </p>
+
+  <p>
+    每一个没注释的函数都是定时炸弹。每一个神秘的条件判断都是地雷。每一个
+    看不懂的算法都是陷阱，等着下一个倒霉玩意来维护你的烂摊子。而且你知道吗？
+    那个倒霉玩意很可能就是你自己。恭喜，你把自己给坑了。
+  </p>
+</section>
+
+<section>
+  <h2>证物 A：一条缺失的注释如何毁掉一切</h2>
+
+  <p>
+    看看这段人畜无害的小代码：
+  </p>
+
+  <pre><code>if (user.age >= 13) {
+  allowAccess();
+}</code></pre>
+
+  <p>
+    看起来很明显，对吧？13 岁及以上的用户可以访问。简单。整洁。"自解释"。
+  </p>
+
+  <p>
+    现在六个月过去了。新法规出台。法务说你需要更新年龄检查。新来的开发看着
+    这行代码想："为什么是 13？这是什么历史遗留问题吗？还是法律要求？哪条法？
+    哪个国家的？这适用于欧盟用户吗？加州呢？我能改成 16 吗？改了会不会爆炸？
+    这有测试吗？为什么没测试？他妈的到底是谁写的这东西？"
+  </p>
+
+  <p>
+    三小时的考古之后，他在 2019 年的 Slack 消息里找到了 COPPA 的蛛丝马迹。
+    又三小时读法律文件。两个合规会议。一次存在主义危机。
+  </p>
+
+  <p>
+    或者，你可以这样写：
+  </p>
+
+  <pre><code>// COPPA 合规：13 岁以下用户需要家长同意
+// 参见：legal/coppa-requirements.md
+if (user.age >= 13) {
+  allowAccess();
+}</code></pre>
+
+  <p>
+    写 15 秒。省 12 小时。但不行，你那珍贵的代码是他妈的"自解释"的。去跟那个
+    正在海投简历的初级开发说这话吧，都是因为你的傲慢。
+  </p>
+</section>
+
+<section>
+  <h2>来自未来的你的情书</h2>
+
+  <p>
+    想象一下：凌晨 2 点 47 分。生产环境起火。寻呼机响个不停。老板在发消息。
+    用户在发推。CEO 刚加入事故频道，说"我就看看"。你手心冒汗。你把 bug
+    追踪到一个函数。你的函数。你八个月前写的，当时你觉得自己聪明绝顶。
+  </p>
+
+  <p>
+    你盯着屏幕：
+  </p>
+
+  <pre><code>const result = items
+  .filter(x => x.status !== 4 && !(x.flags & 0x20))
+  .reduce((a, b) => merge(a, b, true), {});</code></pre>
+
+  <p>
+    状态 4。4 他妈是什么？flags 位域。0x20。那代表什么？<code>merge()</code>
+    的第三个参数。为什么是 true？如果是 false 会怎样？这是你写的。你写的。
+    但你完全不知道它在干嘛。
+  </p>
+
+  <p>
+    未来的你坐在那里，眼睛布满血丝，第四杯咖啡，职业生涯可能就此终结。
+    他想的不是你那优雅的架构，也不是你那精妙的抽象。他想的是："我希望那个
+    蠢货当时写一条注释解释为什么要过滤掉状态 4。" 他想的是："我要造一台
+    时光机，专门回去揍过去的我。"
+  </p>
+
+  <p>
+    那个蠢货是你。那张脸是你的。那顿揍是应得的。
+  </p>
+</section>
+
+<section>
+  <h2>注释解释"为什么"，不是"是什么"</h2>
+
+  <p>
+    "但注释会过时！" 是啊，你的代码也会过时。你的测试也会。你的文档也会。
+    所有东西都会过时，你这个逃避维护的懦夫。这不是反对写注释的理由。这是
+    反对你当懒狗的理由。
+  </p>
+
+  <p>
+    "但我还得维护注释！" 你得维护所有东西。这就是你的工作。你是软件工程师。
+    工程就是需要维护。如果你连改代码的时候更新一行注释都做不到，也许你应该
+    去做点别的。比如水下编筐。听说那个不需要文档。
+  </p>
+
+  <p>
+    真正有用的注释不是写 <code>// i 加一</code> 那种。没人需要那个。别当那种
+    蠢货。真正有用的注释是解释：
+  </p>
+
+  <ul>
+    <li>为什么你选了这个方案而不是那个显而易见的方案</li>
+    <li>这实现的是什么业务规则或法律要求</li>
+    <li>这处理的是什么诡异的边界情况，以及为什么</li>
+    <li>如果有人在不理解上下文的情况下改了这里，什么会炸</li>
+    <li>你试过什么方案但失败了，让下一个人不要重蹈覆辙</li>
+  </ul>
+
+  <p>
+    "是什么"在你的代码里。"为什么"会随着你的记忆消亡——除非你写下来。而你的
+    记忆，就像你对自己代码质量的信心一样，远比你以为的不靠谱。
+  </p>
+</section>
+
+<section>
+  <h2>别再骗自己了</h2>
+
+  <p>
+    你知道不写注释到底是什么吗？那不是技术决策。不是风格选择。不是遵循
+    "最佳实践"。那是懒。纯粹的、不掺水的、武器级别的懒，伪装成高深莫测。
+  </p>
+
+  <p>
+    你不写注释不是因为你的代码太美不需要解释。你不写是因为写注释意味着承认
+    你的代码需要解释。意味着承认你是在为人类写代码，不是只为编译器写。意味着
+    你关心接手你代码的那个人——那个人可能是你自己，肯定会是某个人，而那个人
+    完全值得比你那个密码学谜题式的代码库更好的东西。
+  </p>
+
+  <p>
+    每一个真正资深的工程师——不是那种只是活得够久混到 title 的——都懂这个道理。
+    他们都当过凌晨三点盯着没注释代码的那个人。他们诅咒过写那些代码的人。也被
+    未来的人诅咒过。他们现在写注释，因为他们用惨痛的教训学会了：聪明会褪色，
+    但困惑是永恒的。
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <p>
+    你的代码不是自解释的。<br>
+    你的命名不够清晰。<br>
+    你的架构不会自己说话。<br>
+    未来的你会恨你。<br>
+    你的同事已经恨你了。
+  </p>
+
+  <p>
+    <strong>他妈的给我写注释。</strong>
+  </p>
+</section>
+
+<footer>
+  <hr>
+  <p>
+    <small>
+      &copy; 他妈的给我写注释。版权所有，相信代码能自解释的傻子。
+    </small>
+  </p>
+  <p>
+    <small>
+      <a href="/zh">just-fucking.com</a> 出品 — 用强硬观点对付烂借口。
+    </small>
+  </p>
+  <p>
+    <a href="https://github.com/kldhsh123/just-fucking.com/">有让人不舒服的观点？提个 PR。</a>
+  </p>
+</footer>
+
+</body>
+</html>

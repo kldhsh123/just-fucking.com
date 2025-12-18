@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+<head>
+  <title>Just Fucking Write Comments</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Your code isn't self-documenting. It never was. Stop lying to yourself and write a goddamn comment.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:site_name" content="Just Fucking Write Comments">
+  <meta property="og:title" content="Just Fucking Write Comments">
+  <meta property="og:description" content="Your code isn't self-documenting. It never was. Stop lying to yourself and write a goddamn comment.">
+  <meta property="og:url" content="https://just-fucking.com/write-comments">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:title" content="Just Fucking Write Comments">
+  <meta name="twitter:description" content="Your code isn't self-documenting. It never was. Stop lying to yourself and write a goddamn comment.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://just-fucking.com/write-comments">
+  <link rel="alternate" hreflang="en-US" href="https://just-fucking.com/write-comments">
+  <link rel="alternate" hreflang="zh" href="https://just-fucking.com/write-comments/zh">
+  <link rel="alternate" hreflang="x-default" href="https://just-fucking.com/write-comments">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="top-bar">
+  <a href="/" class="github-link">← Home</a>
+  <details class="lang-switch">
+    <summary>English</summary>
+    <div class="lang-menu">
+      <a href="/write-comments" class="active">English</a>
+      <a href="/write-comments/zh">中文</a>
+    </div>
+  </details>
+</nav>
+
+<header>
+  <h1>Just Fucking Write Comments</h1>
+
+  <p>
+    "My code is self-documenting."
+  </p>
+
+  <p>
+    No it fucking isn't. Sit down.
+  </p>
+
+  <p>
+    I've seen your code. Everyone's seen your code. It reads like a ransom note
+    written by someone having a stroke. Your variable names aren't "expressive."
+    Your function signatures aren't "intention-revealing." Your abstraction
+    layers aren't "telling a story." They're hieroglyphics. Ancient, cryptic,
+    indecipherable hieroglyphics that even you won't understand in six months.
+    But sure, keep telling yourself it's self-documenting. Keep whispering that
+    sweet little lie as you push another uncommented pile of garbage to main.
+  </p>
+</header>
+
+<section>
+  <h2>The "Clean Code" Delusion</h2>
+
+  <p>
+    Oh, you read that book. Good for you, you literate little shit. You learned
+    about meaningful names and small functions and single responsibility. You
+    felt enlightened. You felt superior. You decided comments were a "code smell"
+    and deleted every single one like you were doing the world a favor.
+  </p>
+
+  <p>
+    Here's what that book didn't tell you: naming things is fucking hard, and
+    you're not as good at it as you think. You named your function
+    <code>processData()</code> and thought "yeah, that's clear." Clear to who,
+    asshole? Process WHAT data? HOW? WHY? For what cosmic fucking purpose does
+    this function exist? Your method is called <code>handleClick()</code> and
+    it's 200 lines long. Handling what? A click? Or the entire goddamn
+    application state, three API calls, and some unholy side effects you'll
+    discover in production?
+  </p>
+
+  <p>
+    "But if I need a comment, my code isn't clean enough!" Bullshit. That's not
+    wisdom, that's an excuse. That's you being too lazy to type 15 extra words,
+    dressed up as engineering philosophy. Clean code tells you WHAT. Comments
+    tell you WHY. And WHY is the only thing that matters when you're debugging
+    at 2 AM and you can't remember why the fuck you wrote this conditional that
+    seems to violate all laws of logic and decency.
+  </p>
+</section>
+
+<section>
+  <h2>The Archaeological Disaster You're Creating</h2>
+
+  <p>
+    Here's how your uncommented code ages:
+  </p>
+
+  <p>
+    <strong>Day 1:</strong> "This is elegant and self-explanatory."<br>
+    <strong>Week 2:</strong> "I remember most of what this does."<br>
+    <strong>Month 3:</strong> "There was a reason for this, I think."<br>
+    <strong>Month 6:</strong> "What fucking psychopath wrote this?"<br>
+    <strong>Year 1:</strong> "Do NOT touch this file. Nobody knows what it does.
+    It works. We don't know why. If it breaks, we're fucked."
+  </p>
+
+  <p>
+    That file? That sacred, untouchable file that everyone's afraid of? The one
+    with the <code>// Here be dragons</code> warning that someone desperately
+    scribbled as a last resort? That's YOUR code. That's the masterpiece you
+    were so proud of. That's your "self-documenting" legacy, now rotting in
+    the codebase like a corpse nobody wants to identify.
+  </p>
+
+  <p>
+    Every uncommented function is a time bomb. Every mysterious conditional is
+    a landmine. Every cryptic algorithm is a trap waiting for the next poor
+    bastard who has to maintain your shit. And guess what? That poor bastard
+    might be YOU. Congratulations, you played yourself.
+  </p>
+</section>
+
+<section>
+  <h2>Exhibit A: How One Missing Comment Ruins Everything</h2>
+
+  <p>
+    Look at this innocent little snippet:
+  </p>
+
+  <pre><code>if (user.age >= 13) {
+  allowAccess();
+}</code></pre>
+
+  <p>
+    Seems obvious, right? Users 13 or older get access. Simple. Clean. "Self-documenting."
+  </p>
+
+  <p>
+    Now it's six months later. A new regulation drops. Legal says you need to
+    update the age check. The new dev looks at this line and thinks: "Why 13?
+    Is this some random legacy thing? Is it a legal requirement? Which law?
+    Which country? Does this apply to EU users? What about California? Can I
+    change this to 16? Will something explode if I do? Is there a test for this?
+    Why isn't there a test for this? WHO THE FUCK WROTE THIS?"
+  </p>
+
+  <p>
+    Three hours of archaeology later, they find a Slack message from 2019
+    mentioning COPPA. Three more hours reading legal documents. Two meetings
+    with compliance. One existential crisis.
+  </p>
+
+  <p>
+    Or you could have written:
+  </p>
+
+  <pre><code>// COPPA compliance: users under 13 require parental consent
+// See: legal/coppa-requirements.md
+if (user.age >= 13) {
+  allowAccess();
+}</code></pre>
+
+  <p>
+    Fifteen seconds to write. Twelve hours saved. But no, your precious code
+    was "self-documenting." Tell that to the junior dev who's now mass-applying
+    to other companies because of your arrogance.
+  </p>
+</section>
+
+<section>
+  <h2>A Love Letter From Future You</h2>
+
+  <p>
+    Picture this: It's 2:47 AM. Production is on fire. The pager won't stop
+    screaming. Your boss is texting. Customers are tweeting. The CEO just joined
+    the incident channel and is "just watching." Your palms are sweating. You
+    trace the bug to a function. YOUR function. The one you wrote eight months
+    ago when you were so fucking clever.
+  </p>
+
+  <p>
+    You stare at the screen:
+  </p>
+
+  <pre><code>const result = items
+  .filter(x => x.status !== 4 && !(x.flags & 0x20))
+  .reduce((a, b) => merge(a, b, true), {});</code></pre>
+
+  <p>
+    Status 4. What the fuck is status 4? The flags bitfield. 0x20. What does
+    that represent? The third parameter to <code>merge()</code>. Why true?
+    What happens if it's false? You wrote this. YOU. And you have no fucking
+    idea what it does.
+  </p>
+
+  <p>
+    Future you is sitting there, bloodshot eyes, fourth coffee, career
+    potentially ending, and they're not thinking about your elegant
+    architecture or your clever abstractions. They're thinking: "I wish that
+    stupid asshole had written ONE FUCKING COMMENT explaining why we filter
+    out status 4." They're thinking: "I am going to build a time machine just
+    to punch past me in the face."
+  </p>
+
+  <p>
+    That stupid asshole is you. That face is yours. The punch is deserved.
+  </p>
+</section>
+
+<section>
+  <h2>Comments Explain WHY, Not WHAT</h2>
+
+  <p>
+    "But comments get outdated!" Yeah, and so does your code. So do your tests.
+    So does your documentation. So does everything, you maintenance-avoiding
+    coward. That's not an argument against comments. That's an argument against
+    being a lazy piece of shit.
+  </p>
+
+  <p>
+    "But I have to maintain comments too!" You have to maintain everything.
+    That's literally your job. You're a software engineer. Engineering involves
+    maintenance. If you can't handle updating a one-line comment when you change
+    the code it describes, maybe you should be doing something else. Maybe
+    underwater basket weaving. I hear that doesn't require documentation.
+  </p>
+
+  <p>
+    The comments that matter aren't the ones that say <code>// increment i</code>.
+    Nobody needs that. Don't be that idiot. The comments that matter are the ones
+    that explain:
+  </p>
+
+  <ul>
+    <li>Why you chose this approach over the obvious one</li>
+    <li>What business rule or legal requirement this implements</li>
+    <li>What weird edge case this handles and why</li>
+    <li>What will break if someone changes this without understanding the context</li>
+    <li>What you tried that didn't work, so the next person doesn't repeat your mistakes</li>
+  </ul>
+
+  <p>
+    The WHAT is in your code. The WHY dies with your memory unless you write it
+    down. And your memory, like your confidence in your code quality, is way
+    more unreliable than you think.
+  </p>
+</section>
+
+<section>
+  <h2>Stop Lying to Yourself</h2>
+
+  <p>
+    You know what not writing comments really is? It's not a technical decision.
+    It's not a style choice. It's not following "best practices." It's laziness.
+    Pure, uncut, weapons-grade laziness disguised as sophistication.
+  </p>
+
+  <p>
+    You're not avoiding comments because your code is so beautiful it speaks
+    for itself. You're avoiding them because writing comments means admitting
+    your code needs explanation. It means acknowledging that you're writing
+    for humans, not just for compilers. It means giving a shit about the person
+    who comes after you—which might be you, which definitely will be someone,
+    and who definitely deserves better than your cryptographic puzzle box of
+    a codebase.
+  </p>
+
+  <p>
+    Every senior engineer who's actually senior—not just someone who survived
+    long enough to get the title—knows this. They've been the person staring
+    at uncommented code at 3 AM. They've cursed past developers. They've been
+    cursed by future ones. They write comments now because they've learned the
+    hard way that cleverness fades but confusion is eternal.
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <p>
+    Your code is not self-documenting.<br>
+    Your names are not clear enough.<br>
+    Your architecture does not explain itself.<br>
+    Your future self will hate you.<br>
+    Your teammates already do.
+  </p>
+
+  <p>
+    <strong>Just fucking write comments.</strong>
+  </p>
+</section>
+
+<footer>
+  <hr>
+  <p>
+    <small>
+      &copy; Just Fucking Write Comments. All rights reserved, you
+      self-documenting-code-believing fool.
+    </small>
+  </p>
+  <p>
+    <small>
+      Part of <a href="/">just-fucking.com</a> — strong opinions for weak excuses.
+    </small>
+  </p>
+  <p>
+    <a href="https://github.com/kldhsh123/just-fucking.com/">Got an opinion that hurts? Submit a PR.</a>
+  </p>
+</footer>
+
+</body>
+</html>
