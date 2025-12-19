@@ -176,7 +176,7 @@ The opinions are free. The consequences of ignoring them are not.
 
 ---
 
-## 🔥 TL;DR
+## TL;DR
 
 | I want to... | Do this |
 |---|---|
