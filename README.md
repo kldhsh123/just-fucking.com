@@ -7,6 +7,22 @@ This is a collection of **uncompromising opinions** about bad habits in engineer
 
 ---
 
+## Want to Contribute?
+
+### Got an opinion that hurts?
+
+**[Submit a PR](https://github.com/kldhsh123/just-fucking.com/pulls)**
+
+### Don't know how to PR?
+
+**[Open an Issue](https://github.com/kldhsh123/just-fucking.com/issues/new?template=new-fucking-opinion.yml)** — Tell us what to fucking, and we'll fucking it for you.
+
+### Want a page in your language?
+
+**[Request a Translation](https://github.com/kldhsh123/just-fucking.com/issues/new?template=request-translation.yml)** — Pick a page, pick a language, we'll make it happen.
+
+---
+
 ## What This Is
 
 Each page on this site is a manifesto. One opinion. No balance. No nuance. No "it depends."
@@ -22,9 +38,7 @@ The goal:
 
 ```
 /
-├── index.html              # Homepage (English)
-├── [lang-code]/
-│   └── index.html          # Homepage (other languages)
+├── index.html              # Homepage
 ├── [topic]/
 │   ├── index.html          # English version (primary)
 │   └── [lang-code]/
@@ -37,17 +51,13 @@ The goal:
 
 ---
 
-## Want to Contribute?
-
-Good. We need more people who are tired of bullshit.
-
-### What We Accept
+## What We Accept
 
 - **New manifestos** attacking specific bad habits
 - **Translations** of existing pages
 - **Improvements** to existing rants (make them sharper, not softer)
 
-### What We Reject
+## What We Reject
 
 - Balanced takes
 - "Well, actually..." additions
@@ -100,7 +110,7 @@ Use the existing pages as templates. Key points:
 - Include proper meta tags (og:, twitter:, etc.)
 - Use CSS variables for theming (dark/light mode)
 - Keep the design minimal — this is a poster, not a magazine
-- Include language switcher in footer
+- Include language switcher in nav
 
 ### File Naming
 
@@ -166,6 +176,10 @@ The opinions are free. The consequences of ignoring them are not.
 
 ---
 
-**Got an opinion that hurts? Submit a PR.**
+## TL;DR
 
-**Don't know how to PR? [Open an Issue](https://github.com/kldhsh123/just-fucking.com/issues/). Tell us what to fucking, and we'll fucking it for you.**
+| I want to... | Do this |
+|---|---|
+| Submit a new opinion | [Submit PR](https://github.com/kldhsh123/just-fucking.com/pulls) or [Open Issue](https://github.com/kldhsh123/just-fucking.com/issues/new?template=new-fucking-opinion.yml) |
+| Request a translation | [Request Translation](https://github.com/kldhsh123/just-fucking.com/issues/new?template=request-translation.yml) |
+| Improve an existing page | [Submit PR](https://github.com/kldhsh123/just-fucking.com/pulls) |

@@ -1,0 +1,75 @@
+name: Request Translation
+description: Want an existing page translated to your language? Ask here.
+title: "[TRANSLATE] "
+labels: ["translation-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Want this in your language? We got you.
+        Tell us what page you want translated and to what language.
+
+  - type: dropdown
+    id: page
+    attributes:
+      label: Which page do you want translated?
+      description: Pick the English page you want in your language.
+      options:
+        - write-comments (Just Fucking Write Comments)
+        - say-what-you-want (Just Fucking Say What You Want)
+        - read-the-error (Just Fucking Read the Error Message)
+        - stop-overengineering (Just Fucking Stop Overengineering)
+        - send-the-error-report (Just Fucking Send the Error Report)
+        - have-an-opinion (Just Fucking Have an Opinion)
+        - stop-being-smug (Just Fucking Listen)
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: other-page
+    attributes:
+      label: If "Other", which page?
+      description: Enter the page URL or name
+      placeholder: "e.g., /some-new-page"
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: What language do you want it in?
+      options:
+        - 中文 (Chinese)
+        - 日本語 (Japanese)
+        - 한국어 (Korean)
+        - Español (Spanish)
+        - Deutsch (German)
+        - Français (French)
+        - Português (Portuguese)
+        - Русский (Russian)
+        - العربية (Arabic)
+        - हिन्दी (Hindi)
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: other-language
+    attributes:
+      label: If "Other", which language?
+      placeholder: "e.g., Vietnamese, Thai, Polish"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Any cultural context we should know?
+      description: Local slang, cultural references, or intensity preferences.
+      placeholder: |
+        In my language/culture, we say "X" instead of "Y" for maximum impact...
+        The example about Z doesn't apply here, maybe use A instead...
+
+  - type: checkboxes
+    id: volunteer
+    attributes:
+      label: Want to help?
+      options:
+        - label: I can help translate or review this translation

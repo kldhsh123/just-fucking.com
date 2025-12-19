@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://just-fucking.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Write Comments -->
+  <url>
+    <loc>https://just-fucking.com/write-comments</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/write-comments"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/write-comments/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/write-comments"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/write-comments/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/write-comments"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/write-comments/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/write-comments"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Say What You Want -->
+  <url>
+    <loc>https://just-fucking.com/say-what-you-want</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/say-what-you-want"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/say-what-you-want/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/say-what-you-want"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/say-what-you-want/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/say-what-you-want"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/say-what-you-want/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/say-what-you-want"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Read the Error -->
+  <url>
+    <loc>https://just-fucking.com/read-the-error</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/read-the-error"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/read-the-error/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/read-the-error"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/read-the-error/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/read-the-error"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/read-the-error/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/read-the-error"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Stop Overengineering -->
+  <url>
+    <loc>https://just-fucking.com/stop-overengineering</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/stop-overengineering"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/stop-overengineering/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/stop-overengineering"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/stop-overengineering/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/stop-overengineering"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/stop-overengineering/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/stop-overengineering"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Send the Error Report -->
+  <url>
+    <loc>https://just-fucking.com/send-the-error-report</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/send-the-error-report"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/send-the-error-report/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/send-the-error-report"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/send-the-error-report/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/send-the-error-report"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/send-the-error-report/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/send-the-error-report"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Have an Opinion -->
+  <url>
+    <loc>https://just-fucking.com/have-an-opinion</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/have-an-opinion"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/have-an-opinion/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/have-an-opinion"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/have-an-opinion/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/have-an-opinion"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/have-an-opinion/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/have-an-opinion"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Stop Being Smug -->
+  <url>
+    <loc>https://just-fucking.com/stop-being-smug</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/stop-being-smug"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/stop-being-smug/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/stop-being-smug"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/stop-being-smug/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/stop-being-smug"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/stop-being-smug/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/stop-being-smug"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
