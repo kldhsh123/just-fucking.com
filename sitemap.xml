@@ -142,4 +142,23 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Listen to Advice -->
+  <url>
+    <loc>https://just-fucking.com/listen-to-advice</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/listen-to-advice"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/listen-to-advice/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/listen-to-advice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/listen-to-advice/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/listen-to-advice"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/listen-to-advice/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/listen-to-advice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
