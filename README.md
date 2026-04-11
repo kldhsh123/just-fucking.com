@@ -193,4 +193,4 @@ The opinions are free. The consequences of ignoring them are not.
 
 ---
 
-An excellent community: Linux.DO
+An excellent community: [Linux.DO](https://linux.do/)
