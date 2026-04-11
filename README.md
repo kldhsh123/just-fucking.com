@@ -189,8 +189,3 @@ The opinions are free. The consequences of ignoring them are not.
 | Submit a new opinion | [Submit PR](https://github.com/kldhsh123/just-fucking.com/pulls) or [Open Issue](https://github.com/kldhsh123/just-fucking.com/issues/new?template=new-fucking-opinion.yml) |
 | Request a translation | [Request Translation](https://github.com/kldhsh123/just-fucking.com/issues/new?template=request-translation.yml) |
 | Improve an existing page | [Submit PR](https://github.com/kldhsh123/just-fucking.com/pulls) |
-
-
----
-
-An excellent community: [Linux.DO](https://linux.do/)
