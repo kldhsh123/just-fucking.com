@@ -21,6 +21,12 @@ This is a collection of **uncompromising opinions** about bad habits in engineer
 
 **[Request a Translation](https://github.com/kldhsh123/just-fucking.com/issues/new?template=request-translation.yml)** — Pick a page, pick a language, we'll make it happen.
 
+### Want a contributor email?
+
+Accepted contributions — including pull requests and valid issues — may be eligible for a contributor email address under `contrib.just-fucking.com`, depending on the contribution. If you want one, ask.
+
+Low-effort, duplicate, or spam submissions are not considered valid contributions.
+
 ---
 
 ## What This Is
