@@ -142,4 +142,23 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Do What You're Told -->
+  <url>
+    <loc>https://just-fucking.com/do-what-youre-told</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/do-what-youre-told"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/do-what-youre-told/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/do-what-youre-told"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/do-what-youre-told/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/do-what-youre-told"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/do-what-youre-told/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/do-what-youre-told"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
