@@ -142,6 +142,25 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Google It -->
+  <url>
+    <loc>https://just-fucking.com/google-it</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/google-it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/google-it/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/google-it"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/google-it/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/google-it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/google-it/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/google-it"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Do What You're Told -->
   <url>
     <loc>https://just-fucking.com/do-what-youre-told</loc>
