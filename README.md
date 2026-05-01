@@ -23,9 +23,9 @@ This is a collection of **uncompromising opinions** about bad habits in engineer
 
 ### Want a contributor email?
 
-Accepted contributions — including pull requests and valid issues — may be eligible for a contributor email address under `contrib.just-fucking.com`, depending on the contribution. If you want one, ask.
+Accepted contributions — including pull requests and valid issues — may be eligible for a **receive-only** contributor email address under `contrib.just-fucking.com`, depending on the contribution. You can use it as a backup inbox, but **it cannot send mail**.
 
-Low-effort, duplicate, or spam submissions are not considered valid contributions.
+Low-effort, duplicate, or spam submissions are not considered valid contributions. If you want one, ask.
 
 ---
 
