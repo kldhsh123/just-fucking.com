@@ -180,4 +180,23 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Stop Shitting in the Issue Tracker -->
+  <url>
+    <loc>https://just-fucking.com/stop-shitting-in-the-issue-tracker</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/stop-shitting-in-the-issue-tracker"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/stop-shitting-in-the-issue-tracker/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/stop-shitting-in-the-issue-tracker"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://just-fucking.com/stop-shitting-in-the-issue-tracker/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://just-fucking.com/stop-shitting-in-the-issue-tracker"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://just-fucking.com/stop-shitting-in-the-issue-tracker/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://just-fucking.com/stop-shitting-in-the-issue-tracker"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
